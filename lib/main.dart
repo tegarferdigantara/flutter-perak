@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/home_page.dart';
+import 'package:flutter_application_3/main.dart';
+import 'package:flutter_application_3/register_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +19,12 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'EVENT ORG',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ),
+        // appBar: AppBar(
+        //   title: const Text(
+        //     'EVENT ORG',
+        //     style: TextStyle(fontWeight: FontWeight.bold),
+        //   ),
+        // ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -29,13 +33,13 @@ class MyApp extends StatelessWidget {
                 height: 25,
               ),
               const Text(
-                'Hello',
+                'Halo User',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
               const SizedBox(
                 height: 10,
               ),
-              const Text('Selamat datang', style: TextStyle(fontSize: 20)),
+              const Text('Selamat datang kembali', style: TextStyle(fontSize: 20)),
               const SizedBox(
                 height: 20,
               ),
@@ -117,14 +121,14 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.notifications), label: 'Notification'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profil')
-          ],
-        ),
+        // bottomNavigationBar: BottomNavigationBar(
+        //   items: const [
+        //     BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+        //     BottomNavigationBarItem(
+        //         icon: Icon(Icons.notifications), label: 'Notification'),
+        //     BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profil')
+        //   ],
+        // ),
       ),
     );
   }
